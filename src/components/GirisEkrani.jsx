@@ -122,11 +122,12 @@ const GirisEkrani = () => {
               textAlign: "center",
               fontSize: "48px",
               fontWeight: "bold",
-              color: "#ffffff",
+              color: "black",
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+              
             }}
           >
-            Merhaba
+            FlightApp
           </h1>
           <LoginForm
             onFinish={onFinish}

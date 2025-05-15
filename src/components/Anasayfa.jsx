@@ -160,6 +160,7 @@ const Anasayfa = () => {
     }
 
     setFilteredFlights(filtered);
+    console.log("Filtered Flights:", filtered);
   };
 
  return (
@@ -199,6 +200,38 @@ const Anasayfa = () => {
                   bordered={false}
                   style={{ marginBottom: 16 }}
                 >
+                  <div className="flight-card-content">
+                    <span>
+                      <b>Havayolu:</b> {flight.airline}
+                    </span>
+                    <span>
+                      <b>Nereden:</b> {flight.from}
+                    </span>
+                    <span>
+                      <b>Nereye:</b> {flight.to}
+                    </span>
+                    <span>
+                      <b>Tarih:</b> {flight.departure_date}
+                    </span>
+                    <span>
+                      <b>Kalkış:</b> {flight.departure_time}
+                    </span>
+                    <span>
+                      <b>Varış:</b> {flight.arrival_time}
+                    </span>
+                    <span>
+                      <b>Aktarma:</b>{" "}
+                      {String(flight.is_direct).toLowerCase() === "true"
+                        ? "Direkt"
+                        : "Aktarmalı"}
+                    </span>
+                    <span>
+                      <b>Süre:</b> {flight.duration}
+                    </span>
+                    <span>
+                      <b>Fiyat:</b> {flight.price} TL
+                    </span>
+                  </div>
                   <div className="flight-actions">
                     <Form.Item label="Koltuk" name={`seat_${flight.flight_id}`}>
                       <Select
