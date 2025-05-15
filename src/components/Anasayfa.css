@@ -1,0 +1,109 @@
+/* Genel konteyner */
+.anasayfa-container {
+  padding: 16px;
+  
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* Filtre formu bölümü */
+.filter-section {
+  margin-bottom: 32px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Kart sıralama */
+.card-row {
+  width: 100%;
+}
+
+/* Uçuş kartı */
+.flight-card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.flight-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Kart içeriği */
+.flight-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.flight-card-content span {
+  background: #f0f2f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+  flex: 1 1 180px;
+  min-width: 160px;
+}
+
+/* Seçim alanları ve buton */
+.flight-card-content .ant-form-item {
+  margin: 0;
+  flex: 1 1 200px;
+}
+
+.flight-card-content .ant-select {
+  width: 100%;
+}
+
+
+
+/* Empty bileşeni ortalamak için */
+.ant-empty {
+  margin-top: 40px;
+}
+
+.filter-section {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 24px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.flight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.flight-actions .ant-form-item {
+  margin: 0;
+  flex: 1 1 200px;
+}
+
+.flight-actions .ant-select {
+  width: 100%;
+}
+
+.flight-actions button {
+  height: 40px;
+  min-width: 160px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+
+
