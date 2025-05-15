@@ -164,7 +164,7 @@ const Anasayfa = () => {
 
  return (
     <div className="anasayfa-container">
-      {/* Sağ üst köşeye logout butonu */}
+      
       <div style={{ display: "flex", justifyContent: "flex-end", padding: "10px" }}>
         <Button danger onClick={handleLogout}>
           Logout
@@ -199,8 +199,6 @@ const Anasayfa = () => {
                   bordered={false}
                   style={{ marginBottom: 16 }}
                 >
-                  {/* ... uçuş detayları ve koltuk seçim alanı ... */}
-
                   <div className="flight-actions">
                     <Form.Item label="Koltuk" name={`seat_${flight.flight_id}`}>
                       <Select
